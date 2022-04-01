@@ -19,3 +19,4 @@ if (console.error.isInterceptor != true) {
     console._error_old = console.error;
     console.error = consoleInterceptor;
 }
+//checked

@@ -46,7 +46,7 @@ function NavContent() {
 
                 {address && (
                     <div className="wallet-link">
-                        <Link href={`https://cchain.explorer.avax.network/address/${address}`} target="_blank">
+                        <Link href={`https://bscscan.com/address/${address}`} target="_blank">
                             <p>{shorten(address)}</p>
                         </Link>
                     </div>
@@ -79,40 +79,11 @@ function NavContent() {
                     >
                         <div className="dapp-menu-item">
                             <img alt="" src={StakeIcon} />
-                            <p>Stake-TEST</p>
+                            <p>Rewards</p>
                         </div>
                     </Link>
 
-                    <Link
-                        component={NavLink}
-                        id="bond-nav"
-                        to="/mints"
-                        isActive={(match: any, location: any) => {
-                            return checkPage(location, "mints");
-                        }}
-                        className={classnames("button-dapp-menu", { active: isActive })}
-                    >
-                        <div className="dapp-menu-item">
-                            <img alt="" src={BondIcon} />
-                            <p>Mint-DELETE</p>
-                        </div>
-                    </Link>
 
-                    <div className="bond-discounts">
-                        <p>Mint discounts</p>
-                        {bonds.map((bond, i) => (
-                            <Link component={NavLink} to={`/mints/${bond.name}`} key={i} className={"bond"}>
-                                {!bond.bondDiscount ? (
-                                    <Skeleton variant="text" width={"150px"} />
-                                ) : (
-                                    <p>
-                                        {bond.displayName}
-                                        <span className="bond-pair-roi">{bond.bondDiscount && trim(bond.bondDiscount * 100, 2)}%</span>
-                                    </p>
-                                )}
-                            </Link>
-                        ))}
-                    </div>
 
                     <Link
                         component={NavLink}
@@ -130,12 +101,11 @@ function NavContent() {
                 </div>
             </div>
             <div className="dapp-menu-doc-link">
-                <Link href="https://wonderland.gitbook.io/wonderland/" target="_blank">
-                    <img alt="" src={DocsIcon} />
-                    <p>Docs</p>
+                <Link href="https://eamdao.gitbook.io/eamdao-whitepaper/" target="_blank">
+                    <p>Documentation</p>
                 </Link>
-                <Link href="https://legacy.wonderland.money/" target="_blank">
-                    <p>Legacy website</p>
+                <Link href="https://www.eamdao.com/" target="_blank">
+                    <p>Homepage</p>
                 </Link>
             </div>
             <Social />
