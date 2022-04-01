@@ -29,6 +29,8 @@
 
     .stake-card-header{
       text-align: center;
+      align-items: center;
+      justify-content: center;
 
       .stake-card-header-title{
         font-family: Montserrat Bold;
@@ -41,18 +43,16 @@
     }
 
     .stake-card-metrics {
-      display: flex;
       align-items: center;
+      justify-content: center;
       width: 100%;
       padding: 0;
-      text-align: center;
       margin-top: 10px;
 
       .stake-card-apy,
        {
         align-items: center;
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -70,11 +70,10 @@
         }
 
         .stake-card-metrics-value{
-          align-items: center;
           font-family: Montserrat Bold;
           font-style: normal;
           font-weight: bold;
-          font-size: 36px;
+          font-size: 48px;
           line-height: 36px;
           color: #FFFFFF;
 

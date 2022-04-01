@@ -103,7 +103,7 @@ function Stake() {
                     <Grid className="stake-card-grid" container direction="column" spacing={1}>
                         <Grid item>
                             <div className="stake-card-header">
-                                <p className="stake-card-header-title">Auto Staking - ACTIVE</p>
+                                <p className="stake-card-header-title">Auto Staking Rewards</p>
                                 <RebaseTimer />
                             </div>
                         </Grid>
@@ -114,7 +114,7 @@ function Stake() {
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <div className="stake-card-apy">
                                             <p className="stake-card-metrics-title">APY</p>
-                                            <p className="stake-card-metrics-value">382,945%
+                                            <p className="stake-card-metrics-value">382,945% 
 
                                             </p>
                                         </div>
