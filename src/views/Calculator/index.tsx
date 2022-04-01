@@ -204,12 +204,12 @@ function Calculator() {
                                     </div>
                                     <div className="data-row">
                                         <p className="data-row-name">EAM rewards estimation</p>
-                                        <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} TIME</>}</p>
+                                        <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{rewardsEstimation} EAM</>}</p>
                                     </div>
                                     <div className="data-row">
                                         <p className="data-row-name">Potential return</p>
                                         <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>${potentialReturn}</>}</p>
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                         </div>

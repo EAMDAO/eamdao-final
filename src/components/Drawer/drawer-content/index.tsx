@@ -78,7 +78,7 @@ function NavContent() {
                         className={classnames("button-dapp-menu", { active: isActive })}
                     >
                         <div className="dapp-menu-item">
-                            <img alt="" src={StakeIcon} />
+                            <img alt="" src={BondIcon} />
                             <p>Rewards</p>
                         </div>
                     </Link>

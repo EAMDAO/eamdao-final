@@ -20,13 +20,13 @@
       z-index: 2;
 
       @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-        background: rgba(86, 87, 102, 1);
+        background: rgba(44, 45, 64, 1);
       backdrop-filter: blur(100px);
       }
 
       /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
       @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-        background: #181B1C;
+        background: #2C2D40;
       }
 
       border-radius: 10px;
