@@ -74,7 +74,7 @@ function Calculator() {
         <div className="calculator-view">
             <Zoom in={true}>
                 <div className="calculator-card">
-                    <Grid className="calculator-card-grid" container direction="column" spacing={2}>
+                    <Grid className="calculator-card-grid" container direction="column" spacing={4}>
                         <Grid item>
                             <div className="calculator-card-header">
                                 <p className="calculator-card-header-title">Calculator</p>
@@ -83,7 +83,7 @@ function Calculator() {
                         </Grid>
                         <Grid item>
                             <div className="calculator-card-metrics">
-                                <Grid container spacing={2}>
+                                <Grid container spacing={4}>
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <div className="calculator-card-apy">
                                             <p className="calculator-card-metrics-title">EAM Price</p>
@@ -92,9 +92,9 @@ function Calculator() {
                                     </Grid>
                                     <Grid item xs={6} sm={4} md={4} lg={4}>
                                         <div className="calculator-card-tvl">
-                                            <p className="calculator-card-metrics-title">Current APY</p>
+                                            <p className="calculator-card-metrics-title">APY</p>
                                             <p className="calculator-card-metrics-value">
-                                                {isAppLoading ? <Skeleton width="100px" /> : <>{new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%</>}
+                                                382,945%
                                             </p>
                                         </div>
                                     </Grid>
