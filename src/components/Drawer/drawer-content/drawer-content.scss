@@ -14,7 +14,7 @@
 
     .wallet-link {
       margin: 10px;
-  
+
       p{
         font-family: Montserrat SemiBold;
         font-size: 14px;
@@ -50,11 +50,11 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-        
+
           p{
             font-weight: 600;
             font-size: 16px;
-            color: #FFFFFF;
+            color: #30F2AB;
             font-family: Montserrat SemiBold;
           }
         }
@@ -71,20 +71,20 @@
       .bond-discounts {
         text-align: left;
         padding-left: 54px;
-      
+
         a{
           margin-left: 0;
           margin-top: 20px;
           margin-bottom: 20px;
         }
-      
+
         p{
           font-family: Montserrat;
           font-size: 14px;
           line-height: 17px;
           color: rgba(255, 255, 255, 0.6);
         }
-        
+
         .bond {
           display: block;
           padding: unset;
@@ -101,7 +101,7 @@
 
   .dapp-menu-doc-link{
     margin-top: auto;
-    
+
     a {
       display: flex;
       width: 100%;
@@ -121,7 +121,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
-        color: #FFFFFF;
+        color: #30F2AB;
       }
     }
   }
@@ -145,14 +145,14 @@
 
 .MuiDrawer-root{
   .MuiPaper-root{
-    
+
     z-index: 7;
 
     @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
       background: rgba(36, 39, 41, 0.1);
       backdrop-filter: blur(40px);
     }
-  
+
     /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
     @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
       background: #181B1C;
