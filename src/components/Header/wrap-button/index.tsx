@@ -16,7 +16,7 @@ function WrapButton() {
     return (
         <div>
             <div className="wrap-button" onClick={handelOpenWrap}>
-                <p>Status: Live</p>
+                <p>Status: DEV MODE</p>
             </div>
             <Wrap open={showWrap} handleClose={handelCloseWrap} />
         </div>
@@ -24,3 +24,4 @@ function WrapButton() {
 }
 
 export default WrapButton;
+//wrap button not required so just added status text change to live when ACTIVE
