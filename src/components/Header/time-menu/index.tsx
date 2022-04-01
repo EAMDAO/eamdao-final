@@ -6,6 +6,8 @@ import "./time-menu.scss";
 import { IReduxState } from "../../../store/slices/state.interface";
 import { getTokenUrl } from "../../../helpers";
 
+
+
 const addTokenToWallet = (tokenSymbol: string, tokenAddress: string) => async () => {
     const tokenImage = getTokenUrl(tokenSymbol.toLowerCase());
 
@@ -57,18 +59,19 @@ function TimeMenu() {
             <Popper className="time-menu-popper" open={open} anchorEl={anchorEl} transition>
                 {({ TransitionProps }) => (
                     <Fade {...TransitionProps} timeout={200}>
-                        <div className="tooltip">
-                            <Link className="tooltip-item" href={`https://pancakeswap.finance/swap?outputCurrency=${TIME_ADDRESS}`} target="_blank">
-                                <p>Buy on Pancake Swap</p>
-                            </Link>
+                        <div className="tooltip"><Link className="tooltip-item" href={`https://www.eamdao.com/`} target="_blank">
+                            <p>Homepage</p>
+                        </Link>
+
 
                             {isEthereumAPIAvailable && (
                                 <div className="add-tokens">
                                     <div className="divider" />
-                                    <p className="add-tokens-title">ADD TOKEN TO WALLET</p>
-                                    <div className="divider" />
-                                    <div className="tooltip-item" onClick={addTokenToWallet("TIME", TIME_ADDRESS)}>
-                                        <p>EAM</p>
+
+                                    <div className="tooltip">
+                                    <Link className="tooltip-item" href={`https://pancakeswap.finance/swap?outputCurrency=${TIME_ADDRESS}`} target="_blank">
+                                        <p>Buy on Pancake Swap</p>
+                                    </Link>
                                     </div>
 
                                 </div>

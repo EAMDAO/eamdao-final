@@ -86,14 +86,7 @@ function Dashboard() {
                                     )}
                                 </p>
                             </div>
-                        </Grid>
-
-                        <Grid item lg={6} md={6} sm={6} xs={12}>
-                            <div className="dashboard-card">
-                                <p className="card-title">REMOVE2</p>
-                                <p className="card-value">{isAppLoading ? <Skeleton width="250px" /> : `${trim(Number(app.runway), 1)} Days`}</p>
-                            </div>
-                        </Grid>
+                        </Grid>                      
                     </Grid>
                 </Zoom>
             </div>
