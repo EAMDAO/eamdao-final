@@ -49,9 +49,8 @@
       margin-top: 10px;
 
       .stake-card-apy,
-      .stake-card-tvl,
-      .stake-card-index {
-        flex: 1;
+       {
+        align-items: center;
         display: flex;
         flex-direction: column;
         text-overflow: ellipsis;
@@ -59,6 +58,7 @@
         overflow: hidden;
 
         .stake-card-metrics-title{
+          align-items: center;
           font-family: Montserrat Medium;
           font-style: normal;
           font-weight: 500;
@@ -70,6 +70,7 @@
         }
 
         .stake-card-metrics-value{
+          align-items: center;
           font-family: Montserrat Bold;
           font-style: normal;
           font-weight: bold;

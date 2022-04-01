@@ -114,8 +114,8 @@ function Stake() {
                                     <Grid item xs={12} sm={4} md={4} lg={4}>
                                         <div className="stake-card-apy">
                                             <p className="stake-card-metrics-title">APY</p>
-                                            <p className="stake-card-metrics-value">
-                                                {stakingAPY ? <>{new Intl.NumberFormat("en-US").format(Number(trimmedStakingAPY))}%</> : <Skeleton width="150px" />}
+                                            <p className="stake-card-metrics-value">382,945%
+
                                             </p>
                                         </div>
                                     </Grid>
@@ -131,7 +131,7 @@ function Stake() {
                                     <div className="stake-user-data">
                                         <div className="data-row">
                                             <p className="data-row-name">Your EAM Balance</p>
-                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 4)} EAM</>}</p>
+                                            <p className="data-row-value">{isAppLoading ? <Skeleton width="80px" /> : <>{trim(Number(timeBalance), 5)} EAM</>}</p>
                                         </div>
 
 
