@@ -100,7 +100,7 @@ function Stake() {
         <div className="stake-view">
             <Zoom in={true}>
                 <div className="stake-card">
-                    <Grid className="stake-card-grid" container direction="column" spacing={2}>
+                    <Grid className="stake-card-grid" container direction="column" spacing={1}>
                         <Grid item>
                             <div className="stake-card-header">
                                 <p className="stake-card-header-title">Auto Staking - ACTIVE</p>
@@ -120,30 +120,9 @@ function Stake() {
                                         </div>
                                     </Grid>
 
-                                    <Grid item xs={6} sm={4} md={4} lg={4}>
-                                        <div className="stake-card-tvl">
-                                            <p className="stake-card-metrics-title">TVL</p>
-                                            <p className="stake-card-metrics-value">
-                                                {stakingTVL ? (
-                                                    new Intl.NumberFormat("en-US", {
-                                                        style: "currency",
-                                                        currency: "USD",
-                                                        maximumFractionDigits: 0,
-                                                        minimumFractionDigits: 0,
-                                                    }).format(stakingTVL)
-                                                ) : (
-                                                    <Skeleton width="150px" />
-                                                )}
-                                            </p>
-                                        </div>
-                                    </Grid>
 
-                                    <Grid item xs={6} sm={4} md={4} lg={4}>
-                                        <div className="stake-card-index">
-                                            <p className="stake-card-metrics-title">Current Index</p>
-                                            <p className="stake-card-metrics-value">{currentIndex ? <>{trim(Number(currentIndex), 2)} TIME</> : <Skeleton width="150px" />}</p>
-                                        </div>
-                                    </Grid>
+
+
                                 </Grid>
                             </div>
                         </Grid>

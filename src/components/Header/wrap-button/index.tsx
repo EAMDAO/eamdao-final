@@ -6,7 +6,7 @@ function WrapButton() {
     const [showWrap, setShowWrap] = useState(false);
 
     const handelOpenWrap = () => {
-        setShowWrap(true);
+        setShowWrap(false);
     };
 
     const handelCloseWrap = () => {
@@ -16,7 +16,7 @@ function WrapButton() {
     return (
         <div>
             <div className="wrap-button" onClick={handelOpenWrap}>
-                <p>Wrap</p>
+                <p>Status: Live</p>
             </div>
             <Wrap open={showWrap} handleClose={handelCloseWrap} />
         </div>

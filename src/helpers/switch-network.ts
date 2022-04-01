@@ -12,14 +12,14 @@ const addChainRequest = () => {
         method: "wallet_addEthereumChain",
         params: [
             {
-                chainId: "0xa86a",
-                chainName: "Avalanche Mainnet",
-                rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-                blockExplorerUrls: ["https://cchain.explorer.avax.network/"],
+                chainId: "0x38",
+                chainName: "Binance Smart Chain Mainnet",
+                rpcUrls: ["https://bsc-dataseed.binance.org/"],
+                blockExplorerUrls: ["https://bscscan.com/"],
                 nativeCurrency: {
-                    name: "AVAX",
-                    symbol: "AVAX",
-                    decimals: 18,
+                    name: "BNB",
+                    symbol: "BNB",
+                    decimals: 8,
                 },
             },
         ],
